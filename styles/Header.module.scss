@@ -1,0 +1,29 @@
+@use './theme';
+
+.header {
+  background-color: white;
+  height: 129px;
+}
+
+.centered {
+  max-width: 1360px;
+  border-bottom: 1px solid theme.$gray;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggleSlideshow {
+  font-family: inherit;
+  border: none;
+  background-color: white;
+  color: theme.$dark-gray;
+  font-size: 12px;
+  letter-spacing: 2.57px;
+}
+
+.toggleSlideshow:hover {
+  cursor: pointer;
+}

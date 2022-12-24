@@ -1,5 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+/galleria-slideshow-site
+/galleria-slideshow-site-figma
+
 # dependencies
 /node_modules
 /.pnp
