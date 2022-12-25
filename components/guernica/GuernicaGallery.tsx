@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import imgSrc from '../../../public/assets/girl-with-a-pearl-earring/artist.jpg';
+import imgSrc from '../../public/assets/guernica/gallery.jpg';
 
-export default function GirlWithAPearlEarringArtist({alt} : {alt: string}) {
+export default function GuernicaGallery({alt} : {alt: string}) {
   return (
     <Image
       src={imgSrc}

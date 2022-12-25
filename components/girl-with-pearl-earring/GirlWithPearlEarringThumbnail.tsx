@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import imgSrc from '../../../public/assets/girl-with-a-pearl-earring/thumbnail.jpg';
+import imgSrc from '../../public/assets/girl-with-pearl-earring/thumbnail.jpg';
 
 export default function GirlWithAPearlEarringThumbnail({alt} : {alt: string}) {
   return (
@@ -8,6 +8,8 @@ export default function GirlWithAPearlEarringThumbnail({alt} : {alt: string}) {
       alt={alt}
       placeholder='blur'
       style={{display: 'block'}}
+      width={310}
+      height={400}
     />
   );
 }

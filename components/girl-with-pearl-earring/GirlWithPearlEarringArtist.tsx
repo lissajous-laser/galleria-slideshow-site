@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import imgSrc from '../../../public/assets/girl-with-a-pearl-earring/gallery.jpg';
+import imgSrc from '../../public/assets/girl-with-pearl-earring/artist.jpg';
 
-export default function GirlWithAPearlEarringArtist({alt} : {alt: string}) {
+export default function GirlWithPearlEarringArtist({alt} : {alt: string}) {
   return (
     <Image
       src={imgSrc}
