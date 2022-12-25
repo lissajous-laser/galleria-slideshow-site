@@ -1,0 +1,33 @@
+.container {
+  border: none;
+  padding: 0;
+  width: 310px;
+  position: relative;
+}
+
+.container:hover {
+  cursor: pointer;
+}
+
+.text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding-left: 32px;
+  padding-bottom: 32px; 
+  color: white;
+  text-align: left;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5))
+}
+
+.name {
+  // margin: 0;
+  font-weight: 700;
+}
+
+.artist {
+  margin-top: 7px;
+  font-weight: 400;
+  opacity: 0.75;
+}

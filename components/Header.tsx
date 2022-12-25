@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { libreBaskerville } from '../public/font';
+import { libreBaskerville } from '../lib/font';
 import style from '../styles/Header.module.scss';
 import logo from '../public/assets/shared/logo.svg';
 
