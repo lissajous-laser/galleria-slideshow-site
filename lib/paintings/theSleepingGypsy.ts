@@ -3,9 +3,9 @@ import gallery from "../../components/the-sleeping-gypsy/TheSleepingGypsyGallery
 import heroSmall from "../../components/the-sleeping-gypsy/TheSleepingGypsyHeroSmall";
 import thumbnail from "../../components/the-sleeping-gypsy/TheSleepingGypsyThumbnail";
 import data from '../../public/data.json';
-import { paintingData } from "../types";
+import { PaintingData } from "../types";
 
-export const theSleepingGypsy: paintingData = {
+export const theSleepingGypsy: PaintingData = {
   ...data[7],
   images: {
     hero: {

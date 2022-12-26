@@ -1,4 +1,4 @@
-export type paintingData = {
+export type PaintingData = {
   name: string,
   year: number,
   description: string,
@@ -8,11 +8,17 @@ export type paintingData = {
     name: string,
   },
   images: {
+    thumbnail: string,
     hero: {
-      small: ({alt} : {alt: string}) => JSX.Element
+      small: string,
+      large: string
     },
-    gallery: ({alt} : {alt: string}) => JSX.Element,
-    thumbnail: ({alt} : {alt: string}) => JSX.Element,
-    artist: ({alt} : {alt: string}) => JSX.Element,
+    gallery: string
   },
+  metadata: {
+    gallery: {
+      width: number,
+      height: number
+    }    
+  }
 }

@@ -3,9 +3,9 @@ import gallery from "../../components/lady-with-an-ermine/LadyWithAnErmineGaller
 import heroSmall from "../../components/lady-with-an-ermine/LadyWithAnErmineHeroSmall";
 import thumbnail from "../../components/lady-with-an-ermine/LadyWithAnErmineThumbnail";
 import data from '../../public/data.json';
-import { paintingData } from "../types";
+import { PaintingData } from "../types";
 
-export const ladyWithAnErmine: paintingData = {
+export const ladyWithAnErmine: PaintingData = {
   ...data[8],
   images: {
     hero: {

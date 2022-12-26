@@ -15,6 +15,12 @@
         "large": "./assets/starry-night/hero-large.jpg"
       },
       "gallery": "./assets/starry-night/gallery.jpg"
+    },
+    "metadata": {
+      "gallery": {
+        "width": 310,
+        "height": 250
+      }
     }
   },
   {
@@ -33,7 +39,13 @@
         "large": "./assets/girl-with-pearl-earring/hero-large.jpg"
       },
       "gallery": "./assets/girl-with-pearl-earring/gallery.jpg"
-    }
+    },
+    "metadata": {
+      "gallery": {
+        "width": 310,
+        "height": 400
+      }
+    }    
   },
   {
     "name": "Guernica",
@@ -51,7 +63,13 @@
         "large": "./assets/guernica/hero-large.jpg"
       },
       "gallery": "./assets/guernica/gallery.jpg"
-    }
+    },
+    "metadata": {
+      "gallery": {
+        "width": 310,
+        "height": 285
+      }
+    } 
   },
   {
     "name": "Penitent Magdalene",
@@ -69,7 +87,13 @@
         "large": "./assets/penitent-magdalene/hero-large.jpg"
       },
       "gallery": "./assets/penitent-magdalene/gallery.jpg"
-    }
+    },
+    "metadata": {
+      "gallery": {
+        "width": 310,
+        "height": 250
+      }
+    } 
   },
   {
     "name": "The Storm on the Sea of Galilee",
@@ -87,6 +111,12 @@
         "large": "./assets/the-storm-on-the-sea-of-galilee/hero-large.jpg"
       },
       "gallery": "./assets/the-storm-on-the-sea-of-galilee/gallery.jpg"
+    },
+    "metadata": {
+      "gallery": {
+        "width": 310,
+        "height": 340
+      }
     }
   },
   {
@@ -105,7 +135,13 @@
         "large": "./assets/the-great-wave-off-kanagawa/hero-large.jpg"
       },
       "gallery": "./assets/the-great-wave-off-kanagawa/gallery.jpg"
-    }
+    },
+    "metadata": {
+      "gallery": {
+        "width": 310,
+        "height": 280
+      }
+    } 
   },
   {
     "name": "Van Gogh Self-portrait",
@@ -123,7 +159,13 @@
         "large": "./assets/van-gogh-self-portrait/hero-large.jpg"
       },
       "gallery": "./assets/van-gogh-self-portrait/gallery.jpg"
-    }
+    },
+    "metadata": {
+      "gallery": {
+        "width": 310,
+        "height": 500
+      }
+    } 
   },
   {
     "name": "The Sleeping Gypsy",
@@ -141,7 +183,13 @@
         "large": "./assets/the-sleeping-gypsy/hero-large.jpg"
       },
       "gallery": "./assets/the-sleeping-gypsy/gallery.jpg"
-    }
+    },
+    "metadata": {
+      "gallery": {
+        "width": 310,
+        "height": 250
+      }
+    } 
   },
   {
     "name": "Lady with an Ermine",
@@ -159,7 +207,13 @@
         "large": "./assets/lady-with-an-ermine/hero-large.jpg"
       },
       "gallery": "./assets/lady-with-an-ermine/gallery.jpg"
-    }
+    },
+    "metadata": {
+      "gallery": {
+        "width": 310,
+        "height": 420
+      }
+    } 
   },
   {
     "name": "The Night Café",
@@ -177,7 +231,13 @@
         "large": "./assets/the-night-cafe/hero-large.jpg"
       },
       "gallery": "./assets/the-night-cafe/gallery.jpg"
-    }
+    },
+    "metadata": {
+      "gallery": {
+        "width": 310,
+        "height": 260
+      }
+    } 
   },
   {
     "name": "The Basket of Apples",
@@ -195,7 +255,13 @@
         "large": "./assets/the-basket-of-apples/hero-large.jpg"
       },
       "gallery": "./assets/the-basket-of-apples/gallery.jpg"
-    }
+    },
+    "metadata": {
+      "gallery": {
+        "width": 310,
+        "height": 430
+      }
+    } 
   },
   {
     "name": "The Boy in the Red Vest",
@@ -213,7 +279,13 @@
         "large": "./assets/the-boy-in-the-red-vest/hero-large.jpg"
       },
       "gallery": "./assets/the-boy-in-the-red-vest/gallery.jpg"
-    }
+    },
+    "metadata": {
+      "gallery": {
+        "width": 310,
+        "height": 260
+      }
+    } 
   },
   {
     "name": "Arnolfini Portrait",
@@ -231,7 +303,13 @@
         "large": "./assets/arnolfini-portrait/hero-large.jpg"
       },
       "gallery": "./assets/arnolfini-portrait/gallery.jpg"
-    }
+    },
+    "metadata": {
+      "gallery": {
+        "width": 310,
+        "height": 330
+      }
+    } 
   },
   {
     "name": "Mona Lisa",
@@ -249,7 +327,13 @@
         "large": "./assets/mona-lisa/hero-large.jpg"
       },
       "gallery": "./assets/mona-lisa/gallery.jpg"
-    }
+    },
+    "metadata": {
+      "gallery": {
+        "width": 310,
+        "height": 525
+      }
+    } 
   },
   {
     "name": "The Swing",
@@ -267,6 +351,12 @@
         "large": "./assets/the-swing/hero-large.jpg"
       },
       "gallery": "./assets/the-swing/gallery.jpg"
-    }
+    },
+    "metadata": {
+      "gallery": {
+        "width": 310,
+        "height": 340
+      }
+    } 
   }
 ]

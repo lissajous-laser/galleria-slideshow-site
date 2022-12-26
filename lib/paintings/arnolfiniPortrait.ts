@@ -3,9 +3,9 @@ import gallery from "../../components/arnolfini-portrait/ArnolfiniPortraitGaller
 import heroSmall from "../../components/arnolfini-portrait/ArnolfiniPortraitHeroSmall";
 import thumbnail from "../../components/arnolfini-portrait/ArnolfiniPortraitThumbnail";
 import data from '../../public/data.json';
-import { paintingData } from "../types";
+import { PaintingData } from "../types";
 
-export const arnolfiniPortrait: paintingData = {
+export const arnolfiniPortrait: PaintingData = {
   ...data[12],
   images: {
     hero: {

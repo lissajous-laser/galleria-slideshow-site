@@ -3,9 +3,9 @@ import gallery from "../../components/the-great-wave-off-kanagawa/TheGreatWaveOf
 import heroSmall from "../../components/the-great-wave-off-kanagawa/TheGreatWaveOffKanagawaHeroSmall";
 import thumbnail from "../../components/the-great-wave-off-kanagawa/TheGreatWaveOffKanagawaThumbnail";
 import data from '../../public/data.json';
-import { paintingData } from "../types";
+import { PaintingData } from "../types";
 
-export const theGreatWaveOffKanagawa: paintingData = {
+export const theGreatWaveOffKanagawa: PaintingData = {
   ...data[5],
   images: {
     hero: {

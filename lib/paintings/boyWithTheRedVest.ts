@@ -3,9 +3,9 @@ import gallery from "../../components/the-boy-in-the-red-vest/TheBoyInTheRedVest
 import heroSmall from "../../components/the-boy-in-the-red-vest/TheBoyInTheRedVestHeroSmall";
 import thumbnail from "../../components/the-boy-in-the-red-vest/TheBoyInTheRedVestThumbnail";
 import data from '../../public/data.json';
-import { paintingData } from "../types";
+import { PaintingData } from "../types";
 
-export const theBoyInTheRedVest: paintingData = {
+export const theBoyInTheRedVest: PaintingData = {
   ...data[11],
   images: {
     hero: {

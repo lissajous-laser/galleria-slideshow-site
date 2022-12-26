@@ -3,9 +3,9 @@ import gallery from "../../components/guernica/GuernicaGallery";
 import heroSmall from "../../components/guernica/GuernicaHeroSmall";
 import thumbnail from "../../components/guernica/GuernicaThumbnail";
 import data from '../../public/data.json';
-import { paintingData } from "../types";
+import { PaintingData } from "../types";
 
-export const guernica: paintingData = {
+export const guernica: PaintingData = {
   ...data[2],
   images: {
     hero: {

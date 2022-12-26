@@ -1,19 +1,29 @@
-import { Stint_Ultra_Expanded } from "@next/font/google";
 import Image from "next/image";
+import Link from "next/link";
 import { libreBaskerville } from "../lib/font";
-import { paintingData } from "../lib/types";
+import { kebabCase } from "../lib/functions";
+import { PaintingData } from "../lib/types";
 import style from '../styles/Tile.module.scss';
 
-export default function Tile({painting} : {painting: paintingData}) {
+export default function Tile({painting} : {painting: PaintingData}) {
   return (
-    <button className={`${style.container} ${libreBaskerville.className}`}>
-      <painting.images.thumbnail alt={painting.name}/>
+    <Link
+      className={`${style.container} ${libreBaskerville.className}`}
+      href={`/${kebabCase(painting.name)}`}
+    >
+      <Image
+        src={painting.images.thumbnail.substring(1)}
+        alt={painting.name}
+        style={{display: 'block'}}
+        width={painting.metadata.gallery.width}
+        height={painting.metadata.gallery.height}
+      />
       <div className={style.gradient}>
         <article className={style.text}>
           <h2 className={style.name}>{painting.name}</h2>
           <p className={style.artist}>{painting.artist.name}</p>
         </article>
       </div>
-    </button>
+    </Link>
   );
 }

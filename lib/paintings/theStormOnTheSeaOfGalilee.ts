@@ -3,9 +3,9 @@ import gallery from "../../components/the-storm-on-the-sea-of-galilee/TheStormOn
 import heroSmall from "../../components/the-storm-on-the-sea-of-galilee/TheStormOnTheSeaOfGalileeHeroSmall";
 import thumbnail from "../../components/the-storm-on-the-sea-of-galilee/TheStormOnTheSeaOfGalileeThumbnail";
 import data from '../../public/data.json';
-import { paintingData } from "../types";
+import { PaintingData } from "../types";
 
-export const theStormOnTheSeaOfGalilee: paintingData = {
+export const theStormOnTheSeaOfGalilee: PaintingData = {
   ...data[4],
   images: {
     hero: {

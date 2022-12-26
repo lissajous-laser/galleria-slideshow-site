@@ -3,9 +3,9 @@ import gallery from "../../components/girl-with-pearl-earring/GirlWithPearlEarri
 import heroSmall from "../../components/girl-with-pearl-earring/GirlWithPearlEarringHeroSmall";
 import thumbnail from "../../components/girl-with-pearl-earring/GirlWithPearlEarringThumbnail";
 import data from '../../public/data.json';
-import { paintingData } from "../types";
+import { PaintingData } from "../types";
 
-export const girlWithPearlEarring: paintingData = {
+export const girlWithPearlEarring: PaintingData = {
   ...data[1],
   images: {
     hero: {

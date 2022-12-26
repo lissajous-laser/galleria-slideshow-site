@@ -3,9 +3,9 @@ import gallery from "../../components/the-swing/TheSwingGallery";
 import heroSmall from "../../components/the-swing/TheSwingHeroSmall";
 import thumbnail from "../../components/the-swing/TheSwingThumbnail";
 import data from '../../public/data.json';
-import { paintingData } from "../types";
+import { PaintingData } from "../types";
 
-export const theSwing: paintingData = {
+export const theSwing: PaintingData = {
   ...data[14],
   images: {
     hero: {

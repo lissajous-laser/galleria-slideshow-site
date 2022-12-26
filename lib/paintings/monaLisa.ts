@@ -3,9 +3,9 @@ import gallery from "../../components/mona-lisa/MonaLisaGallery";
 import heroSmall from "../../components/mona-lisa/MonaLisaHeroSmall";
 import thumbnail from "../../components/mona-lisa/MonaLisaThumbnail";
 import data from '../../public/data.json';
-import { paintingData } from "../types";
+import { PaintingData } from "../types";
 
-export const monaLisa: paintingData = {
+export const monaLisa: PaintingData = {
   ...data[13],
   images: {
     hero: {

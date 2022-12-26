@@ -3,9 +3,9 @@ import gallery from "../../components/the-basket-of-apples/TheBasketOfApplesGall
 import heroSmall from "../../components/the-basket-of-apples/TheBasketOfApplesHeroSmall";
 import thumbnail from "../../components/the-basket-of-apples/TheBasketOfApplesThumbnail";
 import data from '../../public/data.json';
-import { paintingData } from "../types";
+import { PaintingData } from "../types";
 
-export const theBasketOfApples: paintingData = {
+export const theBasketOfApples: PaintingData = {
   ...data[10],
   images: {
     hero: {

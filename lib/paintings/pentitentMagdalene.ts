@@ -3,9 +3,9 @@ import gallery from "../../components/penitent-magdalene/PenitentMagdaleneGaller
 import heroSmall from "../../components/penitent-magdalene/PenitentMagdaleneHeroSmall";
 import thumbnail from "../../components/penitent-magdalene/PenitentMagdaleneThumbnail";
 import data from '../../public/data.json';
-import { paintingData } from "../types";
+import { PaintingData } from "../types";
 
-export const penitentMagdalene: paintingData = {
+export const penitentMagdalene: PaintingData = {
   ...data[3],
   images: {
     hero: {

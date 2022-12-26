@@ -3,9 +3,9 @@ import gallery from "../../components/starry-night/StarryNightGallery";
 import heroSmall from "../../components/starry-night/StarryNightHeroSmall";
 import thumbnail from "../../components/starry-night/StarryNightThumbnail";
 import data from '../../public/data.json';
-import { paintingData } from "../types";
+import { PaintingData } from "../types";
 
-export const starryNight: paintingData = {
+export const starryNight: PaintingData = {
   ...data[0],
   images: {
     hero: {
