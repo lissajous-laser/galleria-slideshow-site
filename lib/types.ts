@@ -20,6 +20,10 @@ export type PaintingData = {
       width: number,
       height: number
     },
+    thumbnail: {
+      width: number,
+      height: number
+    },
     index: number    
   }
 }

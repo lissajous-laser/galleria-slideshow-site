@@ -1,10 +1,17 @@
 import Image from 'next/image';
+import { Dispatch, SetStateAction } from 'react';
 import { libreBaskerville } from '../lib/font';
 import { PaintingData } from '../lib/types';
 import enlargeImgIcon from '../public/assets/shared/icon-view-image.svg';
 import style from '../styles/SlideshowContent.module.scss';
 
-export default function SlideshowContent({painting} : {painting: PaintingData}) {
+export default function SlideshowContent({
+  painting,
+  setIsLightboxOn
+} : {
+  painting: PaintingData,
+  setIsLightboxOn: Dispatch<SetStateAction<boolean>>
+}) {
   return (
     <div className={style.content}>
       <Image
@@ -13,7 +20,10 @@ export default function SlideshowContent({painting} : {painting: PaintingData}) 
         width={475}
         height={560}
       />
-      <button className={style.enlargeImgButton}>
+      <button
+        className={style.enlargeImgButton}
+        onClick={() => {setIsLightboxOn(true)}}
+      >
         <div className={style.buttonIconAndText}>
           <Image src={enlargeImgIcon} alt='enlarge painting'/>
           <p

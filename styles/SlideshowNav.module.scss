@@ -26,9 +26,6 @@
   align-items: center;
 }
 
-.text {
-}
-
 .heading {
   font-size: 18px;
   font-weight: 700;
@@ -47,4 +44,8 @@
   width: 90.7px;
   display: flex;
   justify-content: space-between;
+}
+
+.navIcon:hover {
+  opacity: 0.5;
 }

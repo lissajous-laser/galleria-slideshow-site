@@ -15,8 +15,8 @@ export default function Tile({painting} : {painting: PaintingData}) {
         src={painting.images.thumbnail.substring(1)}
         alt={painting.name}
         style={{display: 'block'}}
-        width={painting.metadata.gallery.width}
-        height={painting.metadata.gallery.height}
+        width={painting.metadata.thumbnail.width}
+        height={painting.metadata.thumbnail.height}
       />
       <div className={style.gradient}>
         <article className={style.text}>
@@ -24,6 +24,7 @@ export default function Tile({painting} : {painting: PaintingData}) {
           <p className={style.artist}>{painting.artist.name}</p>
         </article>
       </div>
+      <div className={style.hoverHighlight}/>
     </Link>
   );
 }

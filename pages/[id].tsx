@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
+import { useState } from "react";
 import Header from "../components/Header";
+import Lightbox from "../components/Lightbox";
 import SlideshowContent from "../components/SlideshowContent";
 import SlideshowNav from "../components/SlideshowNav";
 import { libreBaskerville } from "../lib/font";
@@ -18,6 +20,8 @@ export default function Painting({
   urlPathNext: string
 }) {
 
+  const [isLightboxOn, setIsLightboxOn] = useState(false);
+
   return (
     <>
       <Head>
@@ -27,7 +31,10 @@ export default function Painting({
         <Header isSlideshowOn={true}/>
       </header>
       <main className={libreBaskerville.className}>
-        <SlideshowContent painting={painting}/>
+        <SlideshowContent
+          painting={painting}
+          setIsLightboxOn={setIsLightboxOn}
+        />
       </main>
       <nav className={libreBaskerville.className}>
         <SlideshowNav
@@ -36,6 +43,11 @@ export default function Painting({
           urlPathNext={urlPathNext}
         />
       </nav>
+      {isLightboxOn &&
+        <Lightbox
+          painting={painting}
+          setIsLightboxOn={setIsLightboxOn}
+        />}
     </>
   );
 }

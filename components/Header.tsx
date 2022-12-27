@@ -17,7 +17,7 @@ export default function Header({isSlideshowOn} : {isSlideshowOn: boolean}) {
         className={style.toggleSlideshow}
         href={isSlideshowOn ? '/' : 'starry-night'}
       >
-        {`${isSlideshowOn ? 'STOP' : 'START'} SLIDESHOW`}
+        <p>{`${isSlideshowOn ? 'STOP' : 'START'} SLIDESHOW`}</p>
       </Link>
     </div>
   );

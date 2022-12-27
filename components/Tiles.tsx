@@ -7,7 +7,6 @@ import data from '../public/data.json';
  * Shows tiled clickable painting picturs.
  */
 export default function Tiles() { 
-  const lets = data;
 
   return (
     <section className={style.container}>

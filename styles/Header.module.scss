@@ -21,10 +21,14 @@
   background-color: white;
   color: theme.$dark-gray;
   font-size: 12px;
+  line-height: 15px;
   letter-spacing: 2.57px;
-  height: 50px;
+  height: 35px;
+  display: grid;
+  place-items: center;
 }
 
 .toggleSlideshow:hover {
   cursor: pointer;
+  color: black;
 }
