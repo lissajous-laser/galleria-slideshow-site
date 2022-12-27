@@ -19,6 +19,7 @@ export type PaintingData = {
     gallery: {
       width: number,
       height: number
-    }    
+    },
+    index: number    
   }
 }

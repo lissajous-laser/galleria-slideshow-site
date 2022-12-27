@@ -1,20 +1,41 @@
-import { GetStaticPaths } from "next";
 import Head from "next/head";
 import Link from "next/link";
-import { listOfPaintings } from "../lib/data";
+import Header from "../components/Header";
+import SlideshowContent from "../components/SlideshowContent";
+import SlideshowNav from "../components/SlideshowNav";
+import { libreBaskerville } from "../lib/font";
 import { getJsonData } from "../lib/fsFunctions";
 import { kebabCase } from "../lib/functions";
 import {PaintingData} from '../lib/types';
-import data from '../public/data.json';
 
-export default function Painting({painting} : {painting: PaintingData}) {
+export default function Painting({
+  painting,
+  urlPathPrev,
+  urlPathNext
+} : {
+  painting: PaintingData,
+  urlPathPrev: string,
+  urlPathNext: string
+}) {
 
   return (
     <>
       <Head>
-        <title></title>
+        <title>{painting.name}</title>
       </Head>
-      {painting.artist.name}
+      <header className={libreBaskerville.className}>
+        <Header isSlideshowOn={true}/>
+      </header>
+      <main className={libreBaskerville.className}>
+        <SlideshowContent painting={painting}/>
+      </main>
+      <nav className={libreBaskerville.className}>
+        <SlideshowNav
+          painting={painting}
+          urlPathPrev={urlPathPrev}
+          urlPathNext={urlPathNext}
+        />
+      </nav>
     </>
   );
 }
@@ -25,12 +46,22 @@ export async function getStaticProps(
 
   const paintings = await getJsonData();
 
+  const painting = paintings.filter((painting) =>
+    kebabCase(painting.name) === params.id
+  )[0];
+  
+  const urlPathPrev = 
+    paintings[painting.metadata.index - 1]
+    ? kebabCase(paintings[painting.metadata.index - 1].name)
+    : '';
+
+  const urlPathNext = 
+    paintings[painting.metadata.index + 1]
+    ? kebabCase(paintings[painting.metadata.index + 1].name)
+    : '';
+
   return {
-    props: {
-      painting: paintings && paintings.filter((painting) =>
-        kebabCase(painting.name) === params.id
-      )[0]
-    }
+    props: {painting, urlPathPrev, urlPathNext}
   }
 }
 

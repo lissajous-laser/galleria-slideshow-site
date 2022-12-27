@@ -2,16 +2,23 @@ import Image from 'next/image';
 import { libreBaskerville } from '../lib/font';
 import style from '../styles/Header.module.scss';
 import logo from '../public/assets/shared/logo.svg';
+import Link from 'next/link';
 
-export default function Header() {
+export default function Header({isSlideshowOn} : {isSlideshowOn: boolean}) {
   return (
-    <header className={`${style.header} ${libreBaskerville.className}`}>
-      <div className={style.centered}>
+    <div className={style.centered}>
+      <h1 className={style.dummyH1}>
         <Image
           src={logo}
-          alt='Logo'
+          alt='galleria'
         />
-        <button className={style.toggleSlideshow}>START SLIDESHOW</button>
-      </div>
-    </header>);
+      </h1>
+      <Link 
+        className={style.toggleSlideshow}
+        href={isSlideshowOn ? '/' : 'starry-night'}
+      >
+        {`${isSlideshowOn ? 'STOP' : 'START'} SLIDESHOW`}
+      </Link>
+    </div>
+  );
 }

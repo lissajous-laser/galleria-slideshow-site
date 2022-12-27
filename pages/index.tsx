@@ -7,14 +7,7 @@ import { libreBaskerville } from '../lib/font'
 import { useState } from 'react'
 
 export default function Home() {
-  // Sets modal window for painting windows is shown. -1 represents
-  // no window, other numbers represent index in slideshow.
-  const [paintingDetail, setPaintingDetail] = useState(-1);
-  // State of whether lightbox is on. Can only be on when
-  // paintingDetail !== -1.
-  const [isLightboxOn, setIsLightboxOn] = useState(false);
-  // State of scroll vertical position when no modal windows are
-  // open.
+  // State of scroll vertical position.
   const [scrollYPos, setScrollYPos] = useState(0);
 
   return (
@@ -25,10 +18,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-        <Header/>
-        <main className={libreBaskerville.className}>
+        <header className={libreBaskerville.className}>
+          <Header isSlideshowOn={false}/>
+        </header>
+        <nav className={libreBaskerville.className}>
           <Tiles/>
-        </main>
+        </nav>
     </>
   )
 }

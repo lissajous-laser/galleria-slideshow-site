@@ -20,7 +20,8 @@
       "gallery": {
         "width": 310,
         "height": 250
-      }
+      },
+      "index": 0
     }
   },
   {
@@ -44,7 +45,8 @@
       "gallery": {
         "width": 310,
         "height": 400
-      }
+      },
+      "index": 1
     }    
   },
   {
@@ -68,7 +70,8 @@
       "gallery": {
         "width": 310,
         "height": 285
-      }
+      },
+      "index": 2
     } 
   },
   {
@@ -92,7 +95,8 @@
       "gallery": {
         "width": 310,
         "height": 250
-      }
+      },
+      "index": 3
     } 
   },
   {
@@ -116,7 +120,8 @@
       "gallery": {
         "width": 310,
         "height": 340
-      }
+      },
+      "index": 4
     }
   },
   {
@@ -140,7 +145,8 @@
       "gallery": {
         "width": 310,
         "height": 280
-      }
+      },
+      "index": 5
     } 
   },
   {
@@ -164,7 +170,8 @@
       "gallery": {
         "width": 310,
         "height": 500
-      }
+      },
+      "index": 6
     } 
   },
   {
@@ -188,7 +195,8 @@
       "gallery": {
         "width": 310,
         "height": 250
-      }
+      },
+      "index": 7
     } 
   },
   {
@@ -212,7 +220,8 @@
       "gallery": {
         "width": 310,
         "height": 420
-      }
+      },
+      "index": 8
     } 
   },
   {
@@ -236,7 +245,8 @@
       "gallery": {
         "width": 310,
         "height": 260
-      }
+      },
+      "index": 9
     } 
   },
   {
@@ -260,7 +270,8 @@
       "gallery": {
         "width": 310,
         "height": 430
-      }
+      },
+      "index": 10
     } 
   },
   {
@@ -284,7 +295,8 @@
       "gallery": {
         "width": 310,
         "height": 260
-      }
+      },
+      "index": 11
     } 
   },
   {
@@ -308,7 +320,8 @@
       "gallery": {
         "width": 310,
         "height": 330
-      }
+      },
+      "index": 12
     } 
   },
   {
@@ -332,7 +345,8 @@
       "gallery": {
         "width": 310,
         "height": 525
-      }
+      },
+      "index": 13
     } 
   },
   {
@@ -356,7 +370,8 @@
       "gallery": {
         "width": 310,
         "height": 340
-      }
+      },
+      "index": 14
     } 
   }
 ]

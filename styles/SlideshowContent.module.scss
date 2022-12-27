@@ -1,0 +1,102 @@
+@use './theme'; 
+
+.content {
+  margin: 100px auto 75px;
+  width: 1360px;
+  height: 624px;
+  position: relative;
+}
+
+.enlargeImgButton {
+  width: 152px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  left: 16px;
+  bottom: 80px;
+  border: none;
+  display: grid;
+  place-items: center;
+}
+
+.enlargeImgButton:hover {
+  cursor: pointer;
+}
+
+.buttonIconAndText {
+  width: 120px;
+  height: 13px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  // border: 1px solid blue;
+}
+
+.buttonText {
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 2.14px;
+}
+
+.headingBox {
+  width: 445px;
+  height: 302px;
+  position: absolute;
+  top: 0;
+  left: 410px;
+  background-color: white;
+  padding-left: 65px;
+}
+
+.h2 {
+  font-size: 56px;
+  line-height: 64px;
+  width: 380px;
+  font-weight: 700;
+}
+
+.subheading {
+  margin-top: 24px;
+  font-size: 15px;
+  color: theme.$dark-gray;
+}
+
+.artistPic {
+  position: absolute;
+  bottom: 0;
+  left: 505px;
+}
+
+.year {
+  color: theme.$light-gray;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 200px;
+  font-weight: 700;
+  line-height: 150px;
+}
+
+.description {
+  width: 350px;
+  color: theme.$dark-gray;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 700;
+  position: absolute;
+  top: 115px;
+  left: 885px;
+}
+
+.wikiLink {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.93px;
+  text-decoration-line: underline;
+  color: theme.$dark-gray;
+  position: absolute;
+  bottom: 43px;
+  left: 885px;
+  line-height: 31px;
+}       
