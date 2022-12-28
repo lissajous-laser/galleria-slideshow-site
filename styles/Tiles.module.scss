@@ -1,6 +1,21 @@
 .container {
-  max-width: 1360px;
+  width: min(1360px, calc(100% - 80px));
   margin: 40px auto;
   display: flex;
   gap: 40px;
+  justify-content: center;
+}
+
+.md {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .lg {
+    display: none;
+  }
+
+  .md {
+    display: block;
+  }
 }

@@ -6,7 +6,7 @@
 }
 
 .centered {
-  max-width: 1360px;
+  width: min(1360px, calc(100% - 80px));
   border-bottom: 1px solid theme.$gray;
   height: 129px;
   margin: 0 auto;
@@ -31,4 +31,13 @@
 .toggleSlideshow:hover {
   cursor: pointer;
   color: black;
+}
+
+@media screen and (max-width: 1200px) {
+  .centered {
+    width: 100%;
+    padding: 0 40px;
+    height: 89px;
+
+  };
 }

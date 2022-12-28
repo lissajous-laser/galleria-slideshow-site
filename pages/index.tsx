@@ -4,11 +4,23 @@ import style from '../styles/Home.module.scss'
 import Header from '../components/Header'
 import Tiles from '../components/Tiles'
 import { libreBaskerville } from '../lib/font'
-import { useState } from 'react'
+import { useLayoutEffect, useState } from 'react'
 
 export default function Home() {
   // State of scroll vertical position.
   const [scrollYPos, setScrollYPos] = useState(0);
+  const [winWidth, setWinWidth] = useState(0);
+
+  useLayoutEffect(() => {
+    const callbackFn = () => {
+      setWinWidth(window.innerWidth)
+    };
+    window.addEventListener('resize', callbackFn);
+
+    return () => {
+      removeEventListener('resize', callbackFn);
+    }
+  }, []);
 
   return (
     <>

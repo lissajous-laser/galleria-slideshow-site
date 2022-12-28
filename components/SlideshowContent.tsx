@@ -34,20 +34,21 @@ export default function SlideshowContent({
           </p>
         </div>
       </button>
-      <div className={style.headingBox}>
-        <h2 className={style.h2}>{painting.name}</h2>
-        <p className={style.subheading}>{painting.artist.name}</p>
-      </div>
-      <Image
-        className={style.artistPic}
-        src={painting.artist.image.substring(1)}
-        alt={painting.artist.name}
-        width={128}
-        height={128}
-      />
       <h3 className={style.year}>{painting.year}</h3>
+      <div className={style.headingBoxAndArtistPic}>
+        <div className={style.headingBox}>
+          <h2 className={style.h2}>{painting.name}</h2>
+          <p className={style.subheading}>{painting.artist.name}</p>
+        </div>
+        <Image
+          className={style.artistPic}
+          src={painting.artist.image.substring(1)}
+          alt={painting.artist.name}
+          width={128}
+          height={128}
+        />
+      </div>
       <div className={style.description}>{painting.description}</div>
-
       <a className={style.wikiLink} href={painting.source}>
         GO TO SOURCE
       </a>

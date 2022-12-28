@@ -2,7 +2,7 @@
 
 .content {
   margin: 100px auto 75px;
-  width: 1360px;
+  width: min(1360px, calc(100% - 80px));
   height: 624px;
   position: relative;
 }
@@ -13,7 +13,7 @@
   background-color: rgba(0, 0, 0, 0.75);
   position: absolute;
   left: 16px;
-  bottom: 80px;
+  top: 504px;
   border: none;
   display: grid;
   place-items: center;
@@ -46,7 +46,13 @@
   position: absolute;
   top: 0;
   left: 410px;
-  background-color: white;
+  background: linear-gradient(
+    90deg,
+    white 0%,
+    white 75px,
+    rgba(0, 0, 0, 0) 75px,
+    rgba(0, 0, 0, 0) 100%
+  );
   padding-left: 65px;
 }
 
@@ -60,6 +66,7 @@
 .subheading {
   margin-top: 24px;
   font-size: 15px;
+  line-height: 19px;
   color: theme.$dark-gray;
 }
 
@@ -87,7 +94,7 @@
   font-weight: 700;
   position: absolute;
   top: 115px;
-  left: 885px;
+  right: 125px;
 }
 
 .wikiLink {
@@ -98,10 +105,79 @@
   color: theme.$dark-gray;
   position: absolute;
   bottom: 43px;
-  left: 885px;
+  right: 373px;
   line-height: 31px;
 }
 
 .wikiLink:hover {
   color: black;
+}
+
+@media screen and (max-width: 1400px) {
+  .year {
+    top: 225px;
+    left: 505px;
+  }
+
+  .description {
+    right: 75px;
+    top: 148px;
+  }
+
+  .wikiLink {
+    right: 323px;
+  }
+
+  .headingBox, .h2 {
+    width: 540px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .content {
+    margin-top: 40px;
+    margin-bottom: 0;
+    height: 1055px;
+    width: min(768px, calc(100% - 80px));
+  }
+  .year {
+    top: 624px;
+    left: 0;
+  }
+
+  .description {
+    left: 115px;
+    top: 699px;
+    width: 457px;
+  }
+
+  .headingBoxAndArtistPic {
+    position: absolute;
+    left: 243px;
+    top: 0;
+  }
+
+  .headingBox {
+    position: static;
+    width: 445px;
+    height: auto;
+    background-color: white;
+    padding-bottom: 67px;
+  }
+
+  .h2 {
+    width: 380px;
+  }
+
+  .artistPic {
+    position: static;
+    float: right;
+    transform: translateX(-55px);
+  }
+
+  .wikiLink {
+    left: 115px;
+    right: auto;
+    bottom: 53px;
+  }
 }

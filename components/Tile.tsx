@@ -12,6 +12,7 @@ export default function Tile({painting} : {painting: PaintingData}) {
       href={`/${kebabCase(painting.name)}`}
     >
       <Image
+      className={style.img}
         src={painting.images.thumbnail.substring(1)}
         alt={painting.name}
         style={{display: 'block'}}
