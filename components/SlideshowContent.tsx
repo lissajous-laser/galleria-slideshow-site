@@ -14,11 +14,21 @@ export default function SlideshowContent({
 }) {
   return (
     <div className={style.content}>
+      {/* Hero for larger displays */}
       <Image
+        className={style.heroLg}
         src={painting.images.hero.large.substring(1)}
         alt={`${painting.name} painting`}
         width={475}
         height={560}
+      />
+      {/* Hero for small displays */}
+      <Image
+        className={style.heroSm}
+        src={painting.images.hero.small.substring(1)}
+        alt={`${painting.name} painting`}
+        width={327}
+        height={283}
       />
       <button
         className={style.enlargeImgButton}
@@ -48,10 +58,12 @@ export default function SlideshowContent({
           height={128}
         />
       </div>
-      <div className={style.description}>{painting.description}</div>
-      <a className={style.wikiLink} href={painting.source}>
-        GO TO SOURCE
-      </a>
+      <div className={style.descriptionAndWikiLink}>
+        <p className={style.description}>{painting.description}</p>
+        <a className={style.wikiLink} href={painting.source}>
+          GO TO SOURCE
+        </a>
+      </div>
     </div>    
   );
 }

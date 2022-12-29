@@ -38,6 +38,18 @@
     width: 100%;
     padding: 0 40px;
     height: 89px;
-
   };
+}
+
+@media screen and (max-width: 720px) {
+  .centered {
+    padding: 0 24px;
+    height: 80px;
+  }
+
+  .toggleSlideshow {
+    font-size: 9px;
+    line-height: 11px;
+    letter-spacing: 1.93px;
+  }
 }

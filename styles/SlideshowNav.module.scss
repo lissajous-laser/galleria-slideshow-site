@@ -41,11 +41,39 @@
 }
 
 .links {
-  width: 90.7px;
+  width: 110.7px;
   display: flex;
   justify-content: space-between;
+  transform: translateX(10px);
+  // border: 1px solid blue;
+}
+
+.navLink {
+  padding: 10px;
 }
 
 .navIcon:hover {
   opacity: 0.5;
+}
+
+@media screen and (max-width: 720px) {
+  .container {
+    height: 72px;
+  }
+
+  .headingAndNavLinks {
+    height: 71px;
+    width: 100%;
+    padding: 0 24px;
+  }
+
+  .heading {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .subheading {
+    font-size: 10px;
+    line-height: 12px;
+  }
 }

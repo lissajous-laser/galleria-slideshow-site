@@ -2,24 +2,36 @@
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.85);
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
+  overflow: scroll;
 }
 
 .imageAndCloseButton {
-  height: 780px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 31px;
+  // Height and width determine how large picture can become
+  height: calc(100% - 254px);
+  width: calc(100% - 98px);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, calc(-50% - 5px));
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centeredWrapper {
+  width: fit-content; // conforms to width of image
+  // height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
 }
 
 .button {
+  align-self: flex-end;
   font-size: 14px;
   font-weight: 700;
   line-height: 17px;
@@ -36,5 +48,22 @@
 }
 
 .image {
+  align-self: center;
   display: block;
+  max-width: 100%;
+  max-height: 100%;
+  // Setting auto width and height maintains aspect ratio
+  width: auto; 
+  height: auto;
+}
+
+@media screen and (max-width: 720px) {
+  .imageAndCloseButton {
+    width: calc(100% - 48px);
+    height: calc(100% - 48px);
+  }
+
+  .centeredWrapper {
+    gap: 23px;
+  }
 }

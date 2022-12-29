@@ -7,6 +7,15 @@
   position: relative;
 }
 
+.heroLg {
+  object-fit: cover;
+}
+
+.heroSm {
+  object-fit: cover;
+  display: none;
+}
+
 .enlargeImgButton {
   width: 152px;
   height: 40px;
@@ -143,12 +152,7 @@
   .year {
     top: 624px;
     left: 0;
-  }
-
-  .description {
-    left: 115px;
-    top: 699px;
-    width: 457px;
+    right: auto;
   }
 
   .headingBoxAndArtistPic {
@@ -175,9 +179,97 @@
     transform: translateX(-55px);
   }
 
-  .wikiLink {
+  .descriptionAndWikiLink {
+    position: absolute;
+    width: 457px;
     left: 115px;
-    right: auto;
-    bottom: 53px;
+    top: 699px;
+  }
+
+  .description {
+    width: 100%;
+    position: static;
+  }
+
+  .wikiLink {
+    margin-top: 30px;
+    position: static;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .h2 {
+    font-size: 48px;
+    line-height: 56px;
+    width: 320px;
+  }
+
+  .headingBox {
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .content {
+    margin-top: 24px;
+    width: min(384px, calc(100% - 48px));
+    height: 962px;
+  }
+
+  .heroLg {
+    display: none;
+  }
+
+  .heroSm {
+    display: block;
+    width: 100%;
+  }
+
+  .enlargeImgButton {
+    top: 16px;
+    left: 16px;
+  }
+
+  .headingBoxAndArtistPic {
+    top: 230px;
+    left: 0;
+  }
+
+  .headingBox {
+    width: 280px;
+    padding: 24px;
+  }
+
+  .h2 {
+    width: 232px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .subheading {
+    margin-top: 8px;
+  }
+
+  .artistPic {
+    width: 64px;
+    height: 64px;
+    float: left;
+    transform: translateX(16px);
+  }
+
+  .year {
+    font-size: 100px;
+    line-height: 100px;
+    top: 378px;
+    right: 0;
+    left: auto;
+  }
+
+  .descriptionAndWikiLink {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 452px;
   }
 }

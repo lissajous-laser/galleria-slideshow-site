@@ -10,6 +10,11 @@
   display: none;
 }
 
+.sm {
+  display: none;
+}
+
+// Only 2 column layout rendered.
 @media screen and (max-width: 1200px) {
   .lg {
     display: none;
@@ -17,5 +22,20 @@
 
   .md {
     display: block;
+  }
+}
+
+// Only single column layout rendered.
+@media screen and (max-width: 720px) {
+  .md {
+    display: none;
+  }
+
+  .sm {
+    display: block;
+  }
+
+  .container {
+    margin: 24px auto;
   }
 }

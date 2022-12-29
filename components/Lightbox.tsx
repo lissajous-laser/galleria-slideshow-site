@@ -14,6 +14,7 @@ export default function Lightbox({
   return (
     <div className={style.container}>
       <div className={style.imageAndCloseButton}>
+        <div className={style.centeredWrapper}>
         <button
           className={`${libreBaskerville.className} ${style.button}`}
           onClick={() => {setIsLightboxOn(false)}}
@@ -27,6 +28,8 @@ export default function Lightbox({
           width={painting.metadata.gallery.width}
           height={painting.metadata.gallery.height}
         />
+
+        </div>
       </div>
     </div>
   );

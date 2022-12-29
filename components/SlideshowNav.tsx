@@ -32,25 +32,35 @@ export default function SlideshowNav({
         <div className={style.links}>
           {
             urlPathPrev.length === 0
-            ? <Image src={prevIconGray} alt='previous disabled'/>
-            : <Link href={`/${urlPathPrev}`}>
+            ? (<div className={style.navLink}>
+                <Image src={prevIconGray} alt='previous disabled'/>
+              </div>)
+            : (<Link
+                className={style.navLink}
+                href={`/${urlPathPrev}`}
+              >
                 <Image
                   className={style.navIcon}
                   src={prevIcon}
                   alt='previous'
                 />
-              </Link>
-          }
+              </Link>)
+          } 
           {
             urlPathNext.length === 0
-            ? <Image src={nextIconGray} alt='next disabled'/>
-            : <Link href={`/${urlPathNext}`}>
+            ? (<div className={style.navLink}>
+                <Image src={nextIconGray} alt='next disabled'/>
+              </div>)
+            : (<Link
+                className={style.navLink}
+                href={`/${urlPathNext}`}
+              >
                 <Image
                   className={style.navIcon}
                   src={nextIcon}
                   alt='next'
                 />
-              </Link>
+              </Link>)
           }
         </div>
       </div>
