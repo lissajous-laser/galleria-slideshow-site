@@ -25,7 +25,6 @@ export default function Tile({painting} : {painting: PaintingData}) {
           <p className={style.artist}>{painting.artist.name}</p>
         </article>
       </div>
-      <div className={style.hoverHighlight}/>
     </Link>
   );
 }

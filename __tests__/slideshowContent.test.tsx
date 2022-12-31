@@ -2,37 +2,7 @@ import {expect, test} from '@jest/globals';
 import {fireEvent, render, screen} from '@testing-library/react';
 import { SetStateAction } from 'react';
 import SlideshowContent from '../components/SlideshowContent';
-import { PaintingData } from '../lib/types';
-
-const samplePainting: PaintingData = {
-  "name": "Mona Lisa",
-  "year": 1503,
-  "description": "The Mona Lisa (/ˌmoʊnə ˈliːsə/; ...",
-  "source": "https://en.wikipedia.org/wiki/Mona_Lisa",
-  "artist": {
-    "image": "./assets/mona-lisa/artist.jpg",
-    "name": "Leonardo da Vinci"
-  },
-  "images": {
-    "thumbnail": "./assets/mona-lisa/thumbnail.jpg",
-    "hero": {
-      "small": "./assets/mona-lisa/hero-small.jpg",
-      "large": "./assets/mona-lisa/hero-large.jpg"
-    },
-    "gallery": "./assets/mona-lisa/gallery.jpg"
-  },
-  "metadata": {
-    "gallery": {
-      "width": 509,
-      "height": 712
-    },
-    "thumbnail": {
-      "width": 327,
-      "height": 525
-    },
-    "index": 13
-  } 
-};
+import { samplePainting } from '../lib/contants';
 
 const slideshowContentProps = {
   painting: samplePainting,

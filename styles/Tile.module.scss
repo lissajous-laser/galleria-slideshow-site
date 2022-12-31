@@ -13,7 +13,8 @@
   cursor: pointer;
 }
 
-.hoverHighlight {
+.container::after {
+  content: '';
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 255, 0.5);
@@ -23,7 +24,7 @@
   opacity: 0;
 }
 
-.hoverHighlight:hover {
+.container:hover::after {
   opacity: 1;
 }
 
