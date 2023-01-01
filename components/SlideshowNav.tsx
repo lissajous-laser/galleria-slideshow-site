@@ -20,6 +20,7 @@ export default function SlideshowNav({
     <div className={style.container}>
       <div className={style.progressBar}>
         <div
+          aria-label={`${painting.metadata.index} of 15`}
           className={style.completed}
           style={{width: `${(painting.metadata.index + 1)*100/15}%`}}
         />

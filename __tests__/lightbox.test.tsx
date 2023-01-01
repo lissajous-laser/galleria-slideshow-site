@@ -26,4 +26,4 @@ test('Clicking close button calls setIsLightboxOn', () => {
   const closeButton = screen.getByText('CLOSE');
   fireEvent.click(closeButton);
   expect(lightBoxProps.setIsLightboxOn).toBeCalled();
-}); 
+});
